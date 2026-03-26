@@ -1,4 +1,5 @@
 Project Name: Paystack
+
 Description: A professional Django-based payment integration for GmaX Creatives, featuring a modern split-screen checkout interface specifically optimized for Kenyan Shilling (KES) transactions via M-PESA, Airtel Money, and Card payments.
 
 Key Features
