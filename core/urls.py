@@ -16,11 +16,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings # Add this
+from django.conf.urls.static import static # Add this
 from payments.views import checkout_view, payment_success
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', checkout_view, name='checkout'),
     path('payment-success/', payment_success, name='payment-success'),
+   
+
+
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+
 

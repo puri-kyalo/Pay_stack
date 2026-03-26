@@ -70,16 +70,31 @@ body {
     color: #888;
     margin-bottom: 15px;
 }
-
+/* The Light Grey Box */
 .icon-box {
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding: 15px;
+    background-color: #f4f9fc; /* Very light blue/grey tint */
+    border: 1px solid #dce8f0;
+    border-radius: 12px;
+    padding: 15px 25px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 15px;
-    justify-content: center;
-    background: white;
+    width: 90%;
 }
+
+/* The Logos */
+.footer-logo {
+    height: 18px; /* Fixed height to keep them uniform */
+    width: auto;
+    filter: grayscale(20%); /* Optional: softens the colors slightly */
+    transition: filter 0.3s;
+}
+
+.footer-logo:hover {
+    filter: grayscale(0%);
+}
+
 
 .amount-wrapper {
     display: flex;
@@ -209,3 +224,109 @@ input {
     color: #999;
     margin-top: 20px;
 }
+
+/* Success Page Specific Styles */
+.success-container {
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    max-width: 500px; /* Success card is smaller than checkout */
+}
+
+.success-card {
+    text-align: center;
+    width: 100%;
+}
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #3bb75e;
+    color: white;
+    font-size: 40px;
+    line-height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.success-card h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.success-msg {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.receipt-details {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.receipt-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+.receipt-row.total {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+    margin-top: 10px;
+}
+
+.ref-text {
+    font-family: monospace;
+    color: #00aaff;
+}
+
+.back-btn {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #555;
+}
+
+.footer-note {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #999;
+}
+
+/* Container for the whole footer */
+.payment-footer {
+    width: 100%;
+    margin-top: auto; /* Pushes it to the bottom of the summary section */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* The 'Secured by' text with the line effect */
+.secured-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.secured-text {
+    font-size: 11px;
+    color: #666;
+    letter-spacing: 0.5px;
+}
+
