@@ -150,8 +150,7 @@ paystack/
 │           ├── checkout.html # Main form and Paystack JS integration
 │           └── success.html  # Dynamic receipt and success message
 ├── core/
-│   ├── settings.py       # Project configuration and installed apps
-│   └── urls.py           # Global URL routing
-└── requirements.txt      # List of project dependencies
+
+
 
 
