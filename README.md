@@ -120,10 +120,13 @@ Push to the Branch (git push origin feature/NewFeature).
 Open a Pull Request.
 
 8. License Information
+   
 Distributed under the MIT License. See LICENSE for more information.
 
 Code Structure Overview
+
 Plaintext
+
 paystack/
 ├── manage.py
 ├── payments/
