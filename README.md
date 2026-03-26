@@ -133,7 +133,9 @@ Distributed under the MIT License. See LICENSE for more information.
 ________________________________________
 
 Code Structure Overview
+
 Plaintext
+
 paystack/
 ├── manage.py
 ├── payments/
