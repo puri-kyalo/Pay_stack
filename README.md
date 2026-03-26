@@ -133,21 +133,37 @@ Code Structure Overview
 Plaintext
 
 paystack/
+
 ├── manage.py
+
 ├── payments/
+
 │   ├── admin.py          # Admin interface configuration for Payment records
+
 │   ├── models.py         # Database schema for storing transactions
+
 │   ├── views.py          # Logic for checkout and success redirection
+
 │   ├── static/
+
 │   │   └── payments/
+
 │   │       └── style.css # Custom split-screen styling
+
 │   └── templates/
+
 │       └── payments/
+
 │           ├── checkout.html # Main form and Paystack JS integration
+
 │           └── success.html  # Dynamic receipt and success message
+
 ├── core/
+
 │   ├── settings.py       # Project configuration and installed apps
+
 │   └── urls.py           # Global URL routing
+
 └── requirements.txt      # List of project dependencies
 
 
